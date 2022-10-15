@@ -300,10 +300,10 @@ a {
 
 .card--primary .card__header {
   background: var(--color-primary);
-  color: #fff;
+  color: var(--color-white);
 }
 
 .card--secondary .card__header {
   background: var(--color-secondary);
-  color: #fff;
+  color: var(--color-white);
 }
