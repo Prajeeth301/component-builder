@@ -8,6 +8,10 @@
   --color-black: #000;
 }
 
+*, *::before, ::after{
+  box-sizing: border-box;
+}
+
 /* Typography */
 
 html {
@@ -173,4 +177,69 @@ a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Buttons */
+
+.btn {
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 2rem 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  margin: 1rem 0;
+}
+
+.btn--primary{
+  background: var(--color-primary);
+  color: var(--color-accent);
+}
+
+.btn--primary:hover{
+  /* lighten */
+  background: var(--color-primary);
+}
+
+.btn--secondary{
+  background: var(--color-secondary);
+  color: var(--color-white);
+}
+
+.btn--secondary:hover{
+  background: var(--color-secondary);
+}
+
+.btn--accent{
+  background: var(--color-accent);
+  color: var(--color-white);
+}
+
+.btn--accent:hover{
+  background: var(--color-accent);
+}
+
+.btn--block{
+  width: 100%;
+  display: inline-block;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
+}
+
+.btn--outline{
+  background: var(--color-white);
+  color: var(--color-heading);
+  border: 2px solid var(--color-heading);
+}
+
+.btn--outline:hover{
+  background: var(--color-heading);
+  color: var(--color-white);
 }
